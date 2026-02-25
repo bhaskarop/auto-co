@@ -10,7 +10,7 @@ import os
 
 from .base_command import BaseCommand
 
-ADMIN_ID = 'Your Chat Id'
+ADMIN_ID = '8239967579'
 
 def register_admin_commands(bot: AsyncTeleBot):
     @bot.message_handler(func=lambda message: message.text and message.text[0] in ['/', '?', '.'] and
