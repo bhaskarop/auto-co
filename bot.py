@@ -25,7 +25,7 @@ from utils import Utils
 from utils_fo.logger import Logger
 BotCache = {}
 
-TOKEN = 'YOUR BOT TOKEN HERE'
+TOKEN = os.environ.get('TOKEN', '')
 
 FREE_USER_LIMIT = int(os.environ.get('FREE_USER_LIMIT', '60'))
 PREMIUM_USER_LIMIT = int(os.environ.get('PREMIUM_USER_LIMIT', '20'))
